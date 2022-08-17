@@ -1,6 +1,7 @@
 import Nav from "./components/navbar/Nav";
 import logo from "./images/logo.png";
-import navLinks from "./components/navbar/navLinks";
+import { links as navLinks } from "./components/navbar/navLinks";
+import { icons as navIcons } from "./components/navbar/navLinks";
 import {
   BrowserRouter,
   Routes,
@@ -21,6 +22,7 @@ function App() {
           logo={logo}
           logoAlt="Page logo"
           links={navLinks}
+          icons={navIcons}
         />
         <Routes>
           <Route path="/" element={<Home/>}/>

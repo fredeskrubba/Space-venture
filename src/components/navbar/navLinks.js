@@ -1,6 +1,12 @@
-let links = [
+import { ReactComponent as fBLogo } from "../../images/icons/facebookLogo.svg";
+import { ReactComponent as gLLogo } from "../../images/icons/googleLogo.svg";
+import { ReactComponent as iNLogo } from "../../images/icons/instaLogo.svg";
+import { ReactComponent as tWLogo } from "../../images/icons/twitterLogo.svg";
+
+
+const links = [
     {
-      name: "Home",
+      name: "Hjem",
       route: "/"
     },
     {
@@ -24,4 +30,7 @@ let links = [
       route: "/Contact"
     },
   ]
-export default links;
+
+  const icons = [fBLogo, tWLogo, gLLogo, iNLogo];
+
+export { links, icons };
