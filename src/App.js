@@ -3,6 +3,7 @@ import Footer from "./components/footer/Footer";
 import logo from "./images/logo.png";
 import { links as navLinks } from "./components/navbar/navLinks";
 import { icons as navIcons } from "./components/navbar/navLinks";
+import { quickLinks } from "./components/navbar/navLinks";
 import {
   BrowserRouter,
   Routes,
@@ -37,6 +38,9 @@ function App() {
           phoneNum="+45 86 35 10 03"
           email="info@spaceventure.dk"
           address="Galaksevej 39, 8000 Århus"
+          quickLinks={quickLinks}
+          copyright="© 2021 Space Venture. All rights reserved."
+          socials={navIcons}
         />
       </BrowserRouter>
     </div>

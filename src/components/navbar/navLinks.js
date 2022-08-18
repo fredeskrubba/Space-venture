@@ -32,4 +32,26 @@ const links = [
 
   const icons = [fBLogo, tWLogo, gLLogo, iNLogo];
 
-export { links, icons };
+  const quickLinks = [    
+    {
+      name: "Rumfærgen",
+      route: "/Spaceship"
+    },
+    {
+      name: "Ture",
+      route: "/Trips"
+    },
+    {
+      name: "Galleri",
+      route: "/Gallery"
+    },
+    {
+      name: "Sikkerhed",
+      route: "/Security"
+    },
+    {
+      name: "Vores team",
+      route: ""
+    },
+  ]
+export { links, icons, quickLinks };
