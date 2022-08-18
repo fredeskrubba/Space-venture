@@ -3,7 +3,6 @@ import { ReactComponent as gLLogo } from "../../images/icons/googleLogo.svg";
 import { ReactComponent as iNLogo } from "../../images/icons/instaLogo.svg";
 import { ReactComponent as tWLogo } from "../../images/icons/twitterLogo.svg";
 
-
 const links = [
     {
       name: "Hjem",

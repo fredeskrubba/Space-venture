@@ -1,4 +1,5 @@
 import Nav from "./components/navbar/Nav";
+import Footer from "./components/footer/Footer";
 import logo from "./images/logo.png";
 import { links as navLinks } from "./components/navbar/navLinks";
 import { icons as navIcons } from "./components/navbar/navLinks";
@@ -32,6 +33,11 @@ function App() {
           <Route path="/Security" element={<Security/>}/>
           <Route path="/Contact" element={<Contact/>}/>
         </Routes>
+        <Footer
+          phoneNum="+45 86 35 10 03"
+          email="info@spaceventure.dk"
+          address="Galaksevej 39, 8000 Århus"
+        />
       </BrowserRouter>
     </div>
     
