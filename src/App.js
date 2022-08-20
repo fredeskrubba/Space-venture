@@ -18,7 +18,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <BrowserRouter>
         <Nav 
           logo={logo}
