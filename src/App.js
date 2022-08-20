@@ -1,5 +1,5 @@
 import Nav from "./components/navbar/Nav";
-import Footer from "./components/footer/Footer";
+import Footer from "./components/Footer";
 import logo from "./images/logo.png";
 import { links as navLinks } from "./components/navbar/navLinks";
 import { icons as navIcons } from "./components/navbar/navLinks";
@@ -27,7 +27,7 @@ function App() {
           icons={navIcons}
         />
         <Routes>
-          <Route path="/" element={<Home subHeader="OPLEV DE RØDE PLANET" headline="Turen går til Mars"/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/Spaceship" element={<Spaceship/>}/>
           <Route path="/Trips" element={<Trips/>}/>
           <Route path="/Gallery" element={<Gallery/>}/>

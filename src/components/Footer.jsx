@@ -1,6 +1,6 @@
-import {ReactComponent as CursorIcon} from "../../images/icons/cursor-icon.svg";
-import {ReactComponent as EmailIcon} from "../../images/icons/email-icon.svg";
-import {ReactComponent as PhoneIcon} from "../../images/icons/phone-icon.svg";
+import {ReactComponent as CursorIcon} from "../images/icons/cursor-icon.svg";
+import {ReactComponent as EmailIcon} from "../images/icons/email-icon.svg";
+import {ReactComponent as PhoneIcon} from "../images/icons/phone-icon.svg";
 import { Link } from "react-router-dom";
 
 
