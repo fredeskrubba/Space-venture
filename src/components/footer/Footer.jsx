@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Footer = (props) => {
     return ( 
         <footer>
-            <div className="bg-secondary text-white p-5 flex grid-cols-2 items-start">
+            <div className="bg-secondary text-white p-5 flex grid-cols-2">
                 <section className="mx-32 my-12 flex flex-col gap-4">
                     <h2>KONTAKT</h2>
                     <div className="flex gap-4">
@@ -34,14 +34,14 @@ const Footer = (props) => {
                     <button className="px-10 py-5 bg-main text-white">Kontakt</button>
                 </section>
             </div>
-            <div className="bg-secondaryDark flex py-8 px-32">
+            <div className="bg-secondaryDark flex px-32 items-center py-3">
                 <p className="text-gray-600">{props.copyright}</p>
                 <div className="flex items-center mx-auto gap-2">
                     {props.socials.map(Social => {
                         return <Social className="fill-gray-600"/>
                     })}
                 </div>
-                <button>^</button>
+                <button className="p-5 py-3 bg-main text-white my-1">^</button>
             </div>
         </footer>
      );

@@ -27,7 +27,7 @@ function App() {
           icons={navIcons}
         />
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home subHeader="OPLEV DE RØDE PLANET" headline="Turen går til Mars"/>}/>
           <Route path="/Spaceship" element={<Spaceship/>}/>
           <Route path="/Trips" element={<Trips/>}/>
           <Route path="/Gallery" element={<Gallery/>}/>
