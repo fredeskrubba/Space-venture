@@ -1,10 +1,26 @@
 import {ReactComponent as CursorIcon} from "../images/icons/cursor-icon.svg";
 import {ReactComponent as EmailIcon} from "../images/icons/email-icon.svg";
 import {ReactComponent as PhoneIcon} from "../images/icons/phone-icon.svg";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 
 const Footer = (props) => {
+    const [data, setData] = useState({
+        adr: "",
+        tlf: "",
+        email: "",
+    });
+
+    async function fetchText(){
+        let response = await fetch("http://localhost:3001/footer");
+        let text = await response.json();
+        console.log(text);
+        setData(text[0]);
+    } 
+    useEffect(()=>{
+        fetchText()
+    }, [])
     return ( 
         <footer>
             <div className="bg-secondary text-white p-5 flex grid-cols-2">
@@ -12,15 +28,15 @@ const Footer = (props) => {
                     <h2>KONTAKT</h2>
                     <div className="flex gap-4">
                         <PhoneIcon className="fill-main w-6" />
-                        <p>{props.phoneNum}</p>
+                        <p>{data.tlf}</p>
                     </div>
                     <div className="flex gap-4">
                         <EmailIcon className="fill-main w-6"/>
-                        <p>{props.email}</p>
+                        <p>{data.email}</p>
                     </div>
                     <div className="flex gap-4">
                         <CursorIcon className="fill-main w-6 h-6"/>
-                        <p>{props.address}</p>
+                        <p>{data.adr}</p>
                     </div>
                 </section>
                 <section className="m-auto">
