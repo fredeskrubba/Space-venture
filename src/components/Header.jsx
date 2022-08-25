@@ -2,7 +2,7 @@ import banner2 from "../images/banner2.jpg";
 
 const Header = (props) => {
     return ( 
-        <header className="p-20 py-56 " style={{
+        <header className="p-20 py-56 mt-32" style={{
             backgroundImage: `url(${banner2})`,
             backgroundSize: "cover",
             backgroundPosition: "center"

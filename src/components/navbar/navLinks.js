@@ -29,8 +29,25 @@ const links = [
       route: "/Contact"
     },
   ]
+  const icons = [
+    {
+      Logo: fBLogo,
+      anchor: "facebook.com"
+    },
+    {
+      Logo: tWLogo,
+      anchor: "twitter.com"
+    },
+    {
+      Logo: gLLogo,
+      anchor: "google.com"
+    },
+    {
+      Logo: iNLogo,
+      anchor: "instagram.com"
+    },
 
-  const icons = [fBLogo, tWLogo, gLLogo, iNLogo];
+  ];
 
   const quickLinks = [    
     {

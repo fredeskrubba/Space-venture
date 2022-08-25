@@ -54,7 +54,7 @@ const Footer = (props) => {
                 <p className="text-gray-600">{props.copyright}</p>
                 <div className="flex items-center mx-auto gap-2">
                     {props.socials.map(Social => {
-                        return <Social className="fill-gray-600"/>
+                        return <Social.Logo className="fill-gray-600"/>
                     })}
                 </div>
                 <button className="p-5 py-3 bg-main text-white my-1">^</button>
