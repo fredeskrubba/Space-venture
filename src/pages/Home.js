@@ -7,7 +7,7 @@ import Form from "../components/Form";
 const Home = () => {
     return ( 
         <section>
-            <Header subHeader="OPLEV DE RØDE PLANET" headline="Turen går til Mars"/>
+            <Header subHeader="OPLEV DEN RØDE PLANET" headline="Turen går til Mars"/>
             <MoonOrMars />
             <AboutSection/>
             <TeamSection/>
