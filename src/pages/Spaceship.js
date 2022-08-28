@@ -1,6 +1,7 @@
+
 const Spaceship = () => {
     return ( 
-        <h1>Rumfærge</h1>
+        <h1>huhuuhuhuhuhhuh</h1>
      );
 }
  
