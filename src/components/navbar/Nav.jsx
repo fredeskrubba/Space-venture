@@ -19,7 +19,7 @@ const Nav = (props) => {
                 </div>
                 <div className="flex ml-auto items-center">
                     {props.icons.map(Icon => {
-                        return <a href={`https://www.${Icon.anchor}`} target="_blank"><Icon.Logo className="mx-2 fill-white"/></a>
+                        return <a href={`https://www.${Icon.anchor}`} target="_blank"><Icon.Logo className="mx-2 fill-white hover:fill-main"/></a>
                     })}
                 </div>
             </section> 
